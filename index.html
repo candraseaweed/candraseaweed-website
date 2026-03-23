@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Candra Seaweed – Kerupuk Rumput Laut Premium dari Indonesia</title>
+  <meta name="description" content="Candra Seaweed menghadirkan kerupuk rumput laut premium yang sehat, renyah, dan lezat. Camilan inovatif berbahan dasar rumput laut pilihan dari Indonesia. Pesan sekarang atau jadilah reseller kami!" />
+  <meta name="keywords" content="kerupuk rumput laut, seaweed crackers Indonesia, camilan sehat Indonesia, kerupuk sehat, rumput laut snack, healthy snacks Indonesia, makanan sehat Indonesia, kerupuk inovatif" />
+  <meta name="author" content="Candra Seaweed" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Candra Seaweed – Kerupuk Rumput Laut Premium" />
+  <meta property="og:description" content="Camilan sehat dan inovatif berbahan rumput laut pilihan. Renyah, lezat, dan menyehatkan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── DESIGN TOKENS ─────────────────────────────────────── */
+    :root {
+      --c-deep:    #0a2218;
+      --c-forest:  #1a4a2e;
+      --c-sage:    #3d7a56;
+      --c-sea:     #5baa7a;
+      --c-foam:    #a8d8b6;
+      --c-mist:    #e8f5ed;
+      --c-cream:   #faf8f2;
+      --c-gold:    #c9a84c;
+      --c-gold-lt: #e8cc80;
+      --c-white:   #ffffff;
+      --c-ink:     #1a1a1a;
+      --c-gray:    #6b7280;
+      --c-light:   #f3f4f6;
+
+      --ff-display: 'Cormorant Garamond', serif;
+      --ff-body:    'DM Sans', sans-serif;
+
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in:  cubic-bezier(0.7, 0, 0.84, 0);
+
+      --r-sm: 8px;
+      --r-md: 16px;
+      --r-lg: 32px;
+      --r-xl: 64px;
+    }
+
+    /* ─── RESET & BASE ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--ff-body);
+      color: var(--c-ink);
+      background: var(--c-cream);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; font-family: var(--ff-body); }
+
+    /* ─── UTILITY ───────────────────────────────────────────── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section { padding: 100px 0; }
+    .section--alt { background: var(--c-mist); }
+    .section--dark { background: var(--c-deep); color: var(--c-white); }
+
+    .tag {
+      display: inline-block;
+      font-family: var(--ff-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-sage);
+      padding: 6px 14px;
+      border: 1px solid var(--c-foam);
+      border-radius: 100px;
+      background: rgba(168,216,182,0.15);
+      margin-bottom: 20px;
+    }
+    .section--dark .tag {
+      color: var(--c-foam);
+      border-color: rgba(168,216,182,0.3);
+    }
+
+    h1, h2, h3, h4 { font-family: var(--ff-display); font-weight: 300; line-height: 1.15; }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: var(--c-deep);
+      margin-bottom: 16px;
+    }
+    .section-title-product {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: white;
+      margin-bottom: 16px;
+    }
+    .section--dark .section-title { color: var(--c-white); }
+    .section--dark .section-title-product { color: var(--c-white); }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--c-gray);
+      max-width: 560px;
+      line-height: 1.75;
+    }
+    .section-sub-product {
+      font-size: 1.05rem;
+      color: var(--c-gray);
+      line-height: 1.75;
+    }
+    .section--dark .section-sub { color: rgba(255,255,255,0.65); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 30px;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: all 0.3s var(--ease-out);
+    }
+    .btn--primary {
+      background: var(--c-sage);
+      color: var(--c-white);
+      box-shadow: 0 4px 20px rgba(61,122,86,0.35);
+    }
+    .btn--primary:hover {
+      background: var(--c-forest);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(61,122,86,0.45);
+    }
+    .btn--gold {
+      background: var(--c-gold);
+      color: var(--c-white);
+      box-shadow: 0 4px 20px rgba(201,168,76,0.35);
+    }
+    .btn--gold:hover {
+      background: #b8963e;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(201,168,76,0.45);
+    }
+    .btn--outline {
+      border: 1.5px solid var(--c-sage);
+      color: var(--c-sage);
+      background: transparent;
+    }
+    .btn--outline:hover {
+      background: var(--c-sage);
+      color: var(--c-white);
+      transform: translateY(-2px);
+    }
+    .btn--outline-white {
+      border: 1.5px solid rgba(255,255,255,0.5);
+      color: var(--c-white);
+      background: transparent;
+    }
+    .btn--outline-white:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-2px);
+    }
+
+    /* ─── NAVBAR ────────────────────────────────────────────── */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: all 0.4s var(--ease-out);
+    }
+    .navbar.scrolled {
+      background: rgba(250,248,242,0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 12px 0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+    }
+    .navbar__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .navbar__logo-mark {
+      width: 38px; height: 38px;
+      background: var(--c-sage);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .navbar__logo-mark svg { width: 20px; height: 20px; }
+    .navbar__logo-text {
+      font-family: var(--ff-display);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--c-deep);
+    }
+    .navbar__logo-text span { color: var(--c-sage); }
+    .navbar__nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .navbar__nav a {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: var(--c-deep);
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .navbar__nav a:hover { opacity: 1; color: var(--c-sage); }
+    .navbar__actions { display: flex; align-items: center; gap: 12px; }
+    .navbar__lang {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--c-gray);
+      padding: 6px 12px;
+      border-radius: 100px;
+      border: 1px solid var(--c-light);
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .navbar__lang:hover { border-color: var(--c-sage); color: var(--c-sage); }
+    .navbar__burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      background: transparent;
+    }
+    .navbar__burger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--c-deep);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ─── MOBILE NAV ────────────────────────────────────────── */
+    .mobile-nav {
+      position: fixed;
+      inset: 0;
+      background: var(--c-cream);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      transform: translateX(100%);
+      transition: transform 0.4s var(--ease-out);
+    }
+    .mobile-nav.open { transform: translateX(0); }
+    .mobile-nav a {
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--c-deep);
+    }
+    .mobile-nav__close {
+      position: absolute;
+      top: 24px; right: 24px;
+      background: transparent;
+      font-size: 1.5rem;
+      color: var(--c-deep);
+    }
+
+    /* ─── HERO ──────────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(91,170,122,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 20% 80%, rgba(26,74,46,0.12) 0%, transparent 60%),
+        linear-gradient(160deg, var(--c-cream) 0%, #eef7f1 100%);
+      z-index: 0;
+    }
+    .hero__grid-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(61,122,86,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61,122,86,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+    }
+    .hero__orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      z-index: 0;
+    }
+    .hero__orb--1 {
+      width: 500px; height: 500px;
+      background: rgba(91,170,122,0.15);
+      top: -100px; right: -100px;
+    }
+    .hero__orb--2 {
+      width: 350px; height: 350px;
+      background: rgba(201,168,76,0.1);
+      bottom: 0; left: 10%;
+    }
+    .hero__inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero__label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--c-sage);
+      margin-bottom: 24px;
+    }
+    .hero__label::before {
+      content: '';
+      display: block;
+      width: 24px; height: 1.5px;
+      background: var(--c-sage);
+    }
+    .hero__title {
+      font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+      font-weight: 300;
+      line-height: 1.08;
+      color: var(--c-deep);
+      margin-bottom: 24px;
+    }
+    .hero__title em {
+      font-style: italic;
+      color: var(--c-sage);
+    }
+    .hero__title .gold { color: var(--c-gold); }
+    .hero__desc {
+      font-size: 1.05rem;
+      color: var(--c-gray);
+      line-height: 1.8;
+      margin-bottom: 40px;
+      max-width: 480px;
+    }
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 56px;
+    }
+    .hero__trust {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero__trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--c-gray);
+    }
+    .hero__trust-icon {
+      width: 32px; height: 32px;
+      background: var(--c-mist);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+    }
+    .hero__visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero__product-mockup {
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 1;
+      position: relative;
+    }
+    .hero__circle-bg {
+      position: absolute;
+      inset: 8%;
+      border-radius: 50%;
+      background: radial-gradient(ellipse at 40% 35%, rgba(91,170,122,0.25), rgba(26,74,46,0.15));
+      border: 1px solid rgba(91,170,122,0.2);
+    }
+    .hero__product-img {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero__seaweed-art {
+      width: 78%;
+      height: 78%;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 30%, rgba(168,216,182,0.6), transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(61,122,86,0.4), transparent 50%),
+        conic-gradient(from 45deg, #1a4a2e, #3d7a56, #5baa7a, #a8d8b6, #3d7a56, #1a4a2e);
+      border-radius: 50%;
+      box-shadow:
+        0 32px 80px rgba(26,74,46,0.3),
+        0 8px 24px rgba(91,170,122,0.2),
+        inset 0 2px 8px rgba(255,255,255,0.2);
+      animation: floatBowl 5s ease-in-out infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 72px;
+    }
+    @keyframes floatBowl {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-18px) rotate(2deg); }
+    }
+    .hero__badge {
+      position: absolute;
+      background: var(--c-white);
+      border-radius: var(--r-md);
+      padding: 12px 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      animation: floatBadge 4s ease-in-out infinite;
+    }
+    .hero__badge--top { top: 8%; right: 2%; animation-delay: 0.5s; }
+    .hero__badge--bot { bottom: 12%; left: 2%; animation-delay: 1.2s; }
+    .hero__badge-icon { font-size: 20px; }
+    .hero__badge-label { color: var(--c-gray); font-size: 0.7rem; }
+    .hero__badge-value { color: var(--c-deep); font-weight: 600; font-size: 0.85rem; }
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .hero__scroll {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--c-gray);
+      z-index: 1;
+    }
+    .hero__scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--c-sage), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
+    /* ─── STATS BAR ─────────────────────────────────────────── */
+    .stats-bar {
+      background: var(--c-deep);
+      padding: 25px 25px;
+    }
+    .stats-bar__inner {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 120px;
+      text-align: center;
+    }
+    .stats-bar__item { padding: 10px; }
+    .stats-bar__value {
+      font-family: var(--ff-display);
+      font-size: 2.2rem;
+      font-weight: 200;
+      color: var(--c-foam);
+      display: block;
+    }
+    .stats-bar__label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.08em;
+    }
+    .stats-bar__divider {
+      width: 1px;
+      background: rgba(255,255,255,0.08);
+      align-self: stretch;
+    }
+
+    /* ─── ABOUT ─────────────────────────────────────────────── */
+    .about__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about__visual {
+      position: relative;
+    }
+    .about__img-frame {
+      aspect-ratio: 3/4;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--c-forest), var(--c-sage), var(--c-sea));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .about__img-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(168,216,182,0.3), transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(26,74,46,0.5), transparent 50%);
+    }
+    .about__img-emoji {
+      font-size: 100px;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
+      position: relative;
+      z-index: 1;
+    }
+    .about__img-accent {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 140px; height: 140px;
+      border-radius: var(--r-md);
+      background: var(--c-gold);
+      opacity: 0.15;
+    }
+    .about__img-accent2 {
+      position: absolute;
+      bottom: -16px;
+      left: -16px;
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: var(--c-sage);
+      opacity: 0.2;
+    }
+    /* .about__content {
+
+    } */
+    .about__story {
+      font-size: 1.05rem;
+      color: var(--c-gray);
+      line-height: 1.85;
+      margin-bottom: 32px;
+    }
+    .about__origin {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 24px;
+      background: var(--c-mist);
+      border-radius: var(--r-md);
+      border-left: 3px solid var(--c-sage);
+      margin-top: 24px;
+    }
+    .about__origin-icon { font-size: 28px; flex-shrink: 0; }
+    .about__origin-text { font-size: 0.9rem; color: var(--c-forest); line-height: 1.7; }
+    .about__origin-text strong { display: block; margin-bottom: 4px; font-weight: 500; color: var(--c-deep); }
+
+    /* ─── USP ───────────────────────────────────────────────── */
+    .usp { position: relative; overflow: hidden; }
+    .usp::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(168,216,182,0.2), transparent 70%);
+      pointer-events: none;
+    }
+    .usp__header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .usp__header .section-sub { margin: 0 auto; }
+    .usp__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .usp__card {
+      padding: 36px 28px;
+      border-radius: var(--r-lg);
+      background: var(--c-white);
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: all 0.35s var(--ease-out);
+      position: relative;
+      overflow: hidden;
+    }
+    .usp__card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--c-sage), var(--c-sea));
+      transform: scaleX(0);
+      transition: transform 0.35s var(--ease-out);
+    }
+    .usp__card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+    .usp__card:hover::before { transform: scaleX(1); }
+    .usp__card-icon {
+      width: 56px; height: 56px;
+      border-radius: var(--r-md);
+      background: var(--c-mist);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      transition: background 0.3s;
+    }
+    .usp__card:hover .usp__card-icon { background: rgba(91,170,122,0.15); }
+    .usp__card h3 {
+      font-family: var(--ff-body);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--c-deep);
+      margin-bottom: 10px;
+    }
+    .usp__card p { font-size: 0.88rem; color: var(--c-gray); line-height: 1.75; }
+    .usp__card--featured {
+      background: linear-gradient(135deg, var(--c-forest), var(--c-sage));
+      border-color: transparent;
+      color: var(--c-white);
+    }
+    .usp__card--featured .usp__card-icon { background: rgba(255,255,255,0.15); }
+    .usp__card--featured h3 { color: var(--c-white); }
+    .usp__card--featured p { color: rgba(255,255,255,0.75); }
+
+    /* ─── BENEFITS ──────────────────────────────────────────── */
+    .benefits__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .benefits__list { margin-top: 32px; }
+    .benefit-item {
+      display: flex;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .benefit-item:last-child { border-bottom: none; }
+    .benefit-item__num {
+      font-family: var(--ff-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--c-foam);
+      line-height: 1;
+      min-width: 40px;
+    }
+    .benefit-item__content h4 {
+      font-family: var(--ff-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--c-deep);
+      margin-bottom: 6px;
+    }
+    .benefit-item__content p { font-size: 0.85rem; color: var(--c-gray); line-height: 1.7; }
+    .benefits__visual {
+      position: relative;
+    }
+    .benefits__visual-main {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: conic-gradient(from 200deg, var(--c-sea) 0%, var(--c-sage) 30%, var(--c-forest) 60%, var(--c-deep) 80%, var(--c-sea) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 32px 80px rgba(26,74,46,0.25);
+    }
+    .benefits__visual-main::after {
+      content: '';
+      position: absolute;
+      inset: 12%;
+      border-radius: 50%;
+      background: var(--c-mist);
+    }
+    .benefits__visual-center {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    .benefits__visual-center span { font-size: 60px; display: block; }
+    .benefits__visual-center p {
+      font-family: var(--ff-display);
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--c-forest);
+      margin-top: 8px;
+    }
+    .benefits__pill {
+      position: absolute;
+      background: var(--c-white);
+      border-radius: 100px;
+      padding: 10px 18px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--c-deep);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      white-space: nowrap;
+    }
+    .benefits__pill::before {
+      margin-right: 6px;
+    }
+    .benefits__pill--1 { top: 5%; left: 5%; }
+    .benefits__pill--2 { top: 5%; right: 5%; }
+    .benefits__pill--3 { bottom: 5%; left: 5%; }
+    .benefits__pill--4 { bottom: 5%; right: 5%; }
+
+    /* ─── PRODUCT SHOWCASE ──────────────────────────────────── */
+    .showcase { background: var(--c-deep); }
+    .showcase__header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .showcase__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .product-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      transition: all 0.35s var(--ease-out);
+    }
+    .product-card:hover { transform: translateY(-8px); border-color: rgba(91,170,122,0.4); box-shadow: 0 24px 60px rgba(0,0,0,0.4); }
+    .product-card__visual {
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card__visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+    }
+    .product-card--a .product-card__visual { background: linear-gradient(135deg, #1a3a2a, #2d6349); }
+    .product-card--b .product-card__visual { background: linear-gradient(135deg, #1a2a3a, #2d4963); }
+    .product-card--c .product-card__visual { background: linear-gradient(135deg, #3a2a1a, #634d2d); }
+    .product-card__body { padding: 24px; }
+    .product-card__name {
+      font-family: var(--ff-display);
+      font-size: 1.35rem;
+      font-weight: 300;
+      color: var(--c-white);
+      margin-bottom: 8px;
+    }
+    .product-card__desc { font-size: 0.83rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 20px; }
+    .product-card__meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .product-card__badge {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 100px;
+      background: rgba(91,170,122,0.2);
+      color: var(--c-foam);
+      border: 1px solid rgba(91,170,122,0.3);
+    }
+    .product-card__price {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      color: var(--c-gold-lt);
+    }
+
+    /* ─── TESTIMONIALS ──────────────────────────────────────── */
+    .testimonials__header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--c-white);
+      border-radius: var(--r-lg);
+      padding: 32px 28px;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: all 0.3s var(--ease-out);
+      position: relative;
+    }
+    .testimonial-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .testimonial-card__quote {
+      font-family: var(--ff-display);
+      font-size: 3rem;
+      line-height: 1;
+      color: var(--c-foam);
+      margin-bottom: 12px;
+    }
+    .testimonial-card__text {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--c-gray);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-card__author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-card__avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .tc-a { background: var(--c-mist); }
+    .tc-b { background: #fff3e0; }
+    .tc-c { background: #e3f2fd; }
+    .testimonial-card__name {
+      font-weight: 500;
+      font-size: 0.875rem;
+      color: var(--c-deep);
+    }
+    .testimonial-card__role { font-size: 0.75rem; color: var(--c-gray); }
+    .testimonial-card__stars {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: var(--c-gold);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+    }
+
+    /* ─── CTA BANNER ────────────────────────────────────────── */
+    .cta-banner {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--c-forest) 0%, var(--c-sage) 60%, var(--c-sea) 100%);
+      padding: 100px 0;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 80% 50%, rgba(201,168,76,0.2), transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(168,216,182,0.15), transparent 50%);
+    }
+    .cta-banner::after {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .cta-banner__inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+    .cta-banner__title {
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      color: var(--c-white);
+      margin-bottom: 16px;
+    }
+    .cta-banner__sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 40px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.75;
+    }
+    .cta-banner__actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn--wa {
+      background: #25D366;
+      color: var(--c-white);
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    }
+    .btn--wa:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.5);
+    }
+
+    /* ─── FAQ ───────────────────────────────────────────────── */
+    .faq__header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .faq__list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .faq-item:first-child { border-top: 1px solid rgba(0,0,0,0.08); }
+    .faq-item__q {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      padding: 22px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--c-deep);
+      transition: color 0.2s;
+    }
+    .faq-item__q:hover { color: var(--c-sage); }
+    .faq-item__q.active { color: var(--c-sage); }
+    .faq-item__icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      border: 1.5px solid var(--c-light);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      font-size: 16px;
+      color: var(--c-gray);
+      transition: all 0.3s;
+    }
+    .faq-item__q.active .faq-item__icon {
+      background: var(--c-sage);
+      border-color: var(--c-sage);
+      color: var(--c-white);
+      transform: rotate(45deg);
+    }
+    .faq-item__a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s var(--ease-out), padding 0.3s;
+    }
+    .faq-item__a.open { max-height: 300px; padding-bottom: 20px; }
+    .faq-item__a p { font-size: 0.88rem; color: var(--c-gray); line-height: 1.8; }
+
+    /* ─── CONTACT ───────────────────────────────────────────── */
+    .contact { background: var(--c-deep); }
+    .contact__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .contact__info { padding-top: 8px; }
+    .contact__info .tag { color: var(--c-foam); }
+    .contact__channels { margin-top: 36px; display: flex; flex-direction: column; gap: 16px; }
+    .contact__channel {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-radius: var(--r-md);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact__channel:hover {
+      background: rgba(91,170,122,0.15);
+      border-color: rgba(91,170,122,0.3);
+    }
+    .contact__channel-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--r-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+      background: rgba(255,255,255,0.08);
+      flex-shrink: 0;
+    }
+    .contact__channel-text { flex: 1; }
+    .contact__channel-label { font-size: 0.72rem; color: rgba(255,255,255,0.45); margin-bottom: 2px; }
+    .contact__channel-value { font-size: 0.9rem; color: var(--c-white); font-weight: 400; }
+    .contact__form-wrap {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--r-lg);
+      padding: 40px 36px;
+    }
+    .contact__form-title {
+      font-family: var(--ff-display);
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--c-white);
+      margin-bottom: 24px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--r-sm);
+      padding: 12px 16px;
+      font-family: var(--ff-body);
+      font-size: 0.9rem;
+      color: var(--c-white);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,0.25);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--c-sage);
+    }
+    .form-group select option { background: var(--c-deep); color: var(--c-white); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    /* ─── FOOTER ────────────────────────────────────────────── */
+    .footer {
+      background: #060f0a;
+      padding: 56px 0 32px;
+    }
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    /* .footer__brand {
+
+    } */
+    .footer__brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .footer__brand-logo-mark {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: var(--c-sage);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .footer__brand-name {
+      font-family: var(--ff-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--c-white);
+    }
+    .footer__brand-name span { color: var(--c-foam); }
+    .footer__brand-desc { font-size: 0.82rem; color: rgba(255,255,255,0.4); line-height: 1.8; max-width: 240px; }
+    .footer__socials { display: flex; gap: 10px; margin-top: 20px; }
+    .footer__social {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+    .footer__social:hover { background: var(--c-sage); border-color: var(--c-sage); }
+    .footer__col-title {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 20px;
+    }
+    .footer__col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer__col li a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.2s;
+    }
+    .footer__col li a:hover { color: var(--c-foam); }
+    .footer__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.3);
+    }
+    .footer__bottom a { color: rgba(255,255,255,0.3); transition: color 0.2s; }
+    .footer__bottom a:hover { color: var(--c-foam); }
+
+    /* ─── WHATSAPP FLOAT ────────────────────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 900;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+      transition: all 0.3s var(--ease-out);
+      text-decoration: none;
+    }
+    .wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 32px rgba(37,211,102,0.6);
+    }
+    .wa-float svg { width: 28px; height: 28px; fill: white; }
+    .wa-float__pulse {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid rgba(37,211,102,0.5);
+      animation: waPulse 2s ease-in-out infinite;
+    }
+    @keyframes waPulse {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+
+    /* ─── LANGUAGE TOGGLE ───────────────────────────────────── */
+    .lang-id { display: block; }
+    .lang-en { display: none; }
+    body.lang-en .lang-id { display: none; }
+    body.lang-en .lang-en { display: block; }
+    body.lang-en [data-lang="id"] { display: none; }
+    body.lang-en [data-lang="en"] { display: block; }
+    [data-lang="en"] { display: none; }
+
+    /* ─── ANIMATIONS ────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ─── RESPONSIVE ────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .usp__grid { grid-template-columns: repeat(2, 1fr); }
+      .showcase__grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials__grid { grid-template-columns: 1fr 1fr; }
+      .footer__inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 72px 0; }
+      .navbar__nav { display: none; }
+      .navbar__actions .btn { display: none; }
+      .navbar__burger { display: flex; }
+      .hero__inner { grid-template-columns: 1fr; }
+      .hero__visual { display: none; }
+      .hero__title { font-size: clamp(2.2rem, 8vw, 3.2rem); }
+      .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
+      .stats-bar__divider { display: none; }
+      .about__inner { grid-template-columns: 1fr; }
+      .about__img-frame { aspect-ratio: 16/9; }
+      .usp__grid { grid-template-columns: 1fr; }
+      .benefits__inner { grid-template-columns: 1fr; }
+      .benefits__visual { display: none; }
+      .showcase__grid { grid-template-columns: 1fr; }
+      .testimonials__grid { grid-template-columns: 1fr; }
+      .contact__inner { grid-template-columns: 1fr; }
+      .footer__inner { grid-template-columns: 1fr 1fr; }
+      .footer__bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 100px 0 60px; }
+      .footer__inner { grid-template-columns: 1fr; }
+      .cta-banner__actions { flex-direction: column; }
+      .cta-banner__actions .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══ NAVBAR ══════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar" role="banner">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo" aria-label="Candra Seaweed Home">
+        <div class="navbar__logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C9 5 6 8 6 12C6 16 9 19 12 22C15 19 18 16 18 12C18 8 15 5 12 2Z" fill="white" opacity="0.9"/>
+            <path d="M7 9C5 10 4 12 5 14C6 16 8 17 10 16" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="navbar__logo-text">Candra <span>Seaweed</span></span>
+      </a>
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <a href="#tentang" data-lang="id">Tentang</a>
+        <a href="#tentang" data-lang="en" style="display:none">About</a>
+        <a href="#produk" data-lang="id">Produk</a>
+        <a href="#produk" data-lang="en" style="display:none">Products</a>
+        <a href="#manfaat" data-lang="id">Manfaat</a>
+        <a href="#manfaat" data-lang="en" style="display:none">Benefits</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak" data-lang="id">Kontak</a>
+        <a href="#kontak" data-lang="en" style="display:none">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="navbar__lang" id="langToggle" aria-label="Toggle language">🌐 EN</button>
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn btn--primary" style="padding:10px 22px;font-size:0.82rem;">
+          <span data-lang="id">Pesan Sekarang</span>
+          <span data-lang="en" style="display:none">Order Now</span>
+        </a>
+      </div>
+      <button class="navbar__burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-nav__close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#tentang" class="mobile-nav__link">Tentang</a>
+  <a href="#produk" class="mobile-nav__link">Produk</a>
+  <a href="#manfaat" class="mobile-nav__link">Manfaat</a>
+  <a href="#faq" class="mobile-nav__link">FAQ</a>
+  <a href="#kontak" class="mobile-nav__link">Kontak</a>
+  <a href="https://wa.me/6281234567890" class="btn btn--primary" style="margin-top:16px">Pesan Sekarang</a>
+</div>
+
+<!-- ═══ HERO ════════════════════════════════════════════════════ -->
+<main>
+<section class="hero" id="hero" aria-label="Hero section">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__grid-pattern" aria-hidden="true"></div>
+  <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+  <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__label" data-lang="id">🌿 Camilan Sehat dari Laut Indonesia</div>
+        <div class="hero__label" data-lang="en" style="display:none">🌿 Healthy Snack from Indonesian Sea</div>
+
+        <h1 class="hero__title">
+          <span data-lang="id">
+            Rasakan <em>Keajaiban</em><br>
+            Laut dalam Setiap<br>
+            <span class="gold">Gigitan Renyah</span>
+          </span>
+          <span data-lang="en" style="display:none">
+            Taste the <em>Wonder</em><br>
+            of the Sea in Every<br>
+            <span class="gold">Crispy Bite</span>
+          </span>
+        </h1>
+
+        <p class="hero__desc">
+          <span data-lang="id">Kerupuk rumput laut premium pertama dari Indonesia — renyah seperti kerupuk udang favorit Anda, tapi jauh lebih sehat, kaya mineral, dan dibuat dengan cinta dari bahan-bahan terbaik pilihan alam.</span>
+          <span data-lang="en" style="display:none">Indonesia's first premium seaweed cracker — as crispy as your favorite shrimp crackers, but far healthier, mineral-rich, and crafted with love from nature's finest ingredients.</span>
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.107 1.523 5.837L.057 23.882l6.198-1.448A11.937 11.937 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.032-1.384l-.36-.214-3.733.872.938-3.435-.235-.372A9.79 9.79 0 012.182 12C2.182 6.561 6.561 2.182 12 2.182S21.818 6.561 21.818 12 17.439 21.818 12 21.818z"/></svg>
+            <span data-lang="id">Pesan via WhatsApp</span>
+            <span data-lang="en" style="display:none">Order via WhatsApp</span>
+          </a>
+          <a href="#produk" class="btn btn--outline">
+            <span data-lang="id">Lihat Produk</span>
+            <span data-lang="en" style="display:none">View Products</span>
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <div class="hero__trust-icon" aria-hidden="true">🌿</div>
+            <span data-lang="id">100% Alami</span>
+            <span data-lang="en" style="display:none">100% Natural</span>
+          </div>
+          <div class="hero__trust-item">
+            <div class="hero__trust-icon" aria-hidden="true">✅</div>
+            <span data-lang="id">Halal Certified</span>
+            <span data-lang="en" style="display:none">Halal Certified</span>
+          </div>
+          <div class="hero__trust-item">
+            <div class="hero__trust-icon" aria-hidden="true">🚢</div>
+            <span data-lang="id">Pengiriman Nasional</span>
+            <span data-lang="en" style="display:none">Nationwide Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__product-mockup">
+          <div class="hero__circle-bg"></div>
+          <div class="hero__product-img">
+            <div class="hero__seaweed-art">
+                <img src="./assets/brand.png" alt="" srcset="" style="border-radius: 40%;">
+            </div>
+          </div>
+
+          <div class="hero__badge hero__badge--top">
+            <span class="hero__badge-icon">🏆</span>
+            <div>
+              <div class="hero__badge-value">#1 Pilihan</div>
+              <div class="hero__badge-label">Kerupuk Sehat 2024</div>
+            </div>
+          </div>
+
+          <div class="hero__badge hero__badge--bot">
+            <span class="hero__badge-icon">⭐</span>
+            <div>
+              <div class="hero__badge-value">4.9 / 5.0</div>
+              <div class="hero__badge-label">1,200+ Ulasan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══ STATS BAR ════════════════════════════════════════════════ -->
+<div class="stats-bar" role="region" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats-bar__inner">
+      <div class="stats-bar__item reveal">
+        <span class="stats-bar__value">5,000+</span>
+        <span class="stats-bar__label" data-lang="id">Pelanggan Puas</span>
+        <span class="stats-bar__label" data-lang="en" style="display:none">Happy Customers</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item reveal reveal-delay-1">
+        <span class="stats-bar__value">100%</span>
+        <span class="stats-bar__label" data-lang="id">Bahan Alami</span>
+        <span class="stats-bar__label" data-lang="en" style="display:none">Natural Ingredients</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item reveal reveal-delay-2">
+        <span class="stats-bar__value">3</span>
+        <span class="stats-bar__label" data-lang="id">Varian Rasa</span>
+        <span class="stats-bar__label" data-lang="en" style="display:none">Flavor Variants</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item reveal reveal-delay-3">
+        <span class="stats-bar__value">34</span>
+        <span class="stats-bar__label" data-lang="id">Provinsi Terjangkau</span>
+        <span class="stats-bar__label" data-lang="en" style="display:none">Provinces Reached</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ════════════════════════════════════════════════════ -->
+<section class="section" id="tentang" aria-label="About Candra Seaweed">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__visual reveal">
+        <div class="about__img-accent" aria-hidden="true"></div>
+        <div class="about__img-frame">
+          <div class="about__img-emoji" role="img" aria-label="Seaweed plant illustration">🌿</div>
+        </div>
+        <div class="about__img-accent2" aria-hidden="true"></div>
+        <!-- Suggested image: Professional photo of seaweed farm in Indonesian waters, alt="Ladang rumput laut segar di perairan Indonesia" -->
+      </div>
+      <div class="about__content">
+        <span class="tag" data-lang="id">Cerita Kami</span>
+        <span class="tag" data-lang="en" style="display:none">Our Story</span>
+        <h2 class="section-title" data-lang="id">Inovasi dari <br>Kekayaan Laut Indonesia</h2>
+        <h2 class="section-title" data-lang="en" style="display:none">Innovation from<br>Indonesia's Ocean Wealth</h2>
+        <p class="about__story" data-lang="id">
+          Candra Seaweed lahir dari kecintaan terhadap kekayaan laut Indonesia dan keinginan untuk menghadirkan camilan yang tidak hanya lezat, tetapi juga berdampak baik bagi tubuh Anda. Kami menggabungkan tradisi pembuatan kerupuk Indonesia dengan inovasi modern berbahan dasar rumput laut pilihan.
+        </p>
+        <p class="about__story" data-lang="en" style="display:none">
+          Candra Seaweed was born from a deep love for Indonesia's ocean riches and a desire to create snacks that are not only delicious but also genuinely good for your body. We combine Indonesia's traditional cracker-making heritage with modern innovation using premium seaweed.
+        </p>
+        <p class="about__story" data-lang="id">
+          Hasilnya adalah kerupuk yang bentuk dan teksturnya mirip kerupuk udang kesayangan Anda, namun kaya akan yodium, serat, dan mineral alami — tanpa mengorbankan cita rasa yang Anda cintai.
+        </p>
+        <p class="about__story" data-lang="en" style="display:none">
+          The result is a cracker with the familiar shape and texture of beloved shrimp crackers, yet rich in iodine, fiber, and natural minerals — without sacrificing the taste you love.
+        </p>
+        <div class="about__origin">
+          <span class="about__origin-icon" role="img" aria-label="Indonesia flag">🇮🇩</span>
+          <div class="about__origin-text">
+            <strong data-lang="id">Bangga Produk Indonesia</strong>
+            <strong data-lang="en" style="display:none">Proudly Made in Indonesia</strong>
+            <span data-lang="id">Dibuat dengan bahan baku rumput laut lokal berkualitas tinggi dari perairan Indonesia, mendukung petani rumput laut lokal dan ekonomi maritim bangsa.</span>
+            <span data-lang="en" style="display:none">Made with high-quality local seaweed from Indonesian waters, supporting local seaweed farmers and the nation's maritime economy.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ USP ══════════════════════════════════════════════════════ -->
+<section class="section section--alt usp" id="keunggulan" aria-label="Unique selling points">
+  <div class="container">
+    <div class="usp__header reveal">
+      <span class="tag" data-lang="id">Mengapa Kami Berbeda</span>
+      <span class="tag" data-lang="en" style="display:none">Why We're Different</span>
+      <h2 class="section-title" data-lang="id">Keunggulan Candra Seaweed</h2>
+      <h2 class="section-title" data-lang="en" style="display:none">The Candra Seaweed Advantage</h2>
+      <p class="section-sub" data-lang="id">Bukan sekadar camilan biasa. Ini adalah revolusi dalam dunia kerupuk Indonesia.</p>
+      <p class="section-sub" data-lang="en" style="display:none">Not just another snack. This is a revolution in the world of Indonesian crackers.</p>
+    </div>
+    <div class="usp__grid">
+      <article class="usp__card reveal reveal-delay-1">
+        <div class="usp__card-icon" aria-hidden="true">🌊</div>
+        <h3 data-lang="id">Bahan Baku Premium</h3>
+        <h3 data-lang="en" style="display:none">Premium Raw Materials</h3>
+        <p data-lang="id">Menggunakan rumput laut segar pilihan dari perairan Indonesia yang kaya nutrisi dan diproses dengan standar ketat.</p>
+        <p data-lang="en" style="display:none">Using fresh selected seaweed from nutrient-rich Indonesian waters, processed under strict quality standards.</p>
+      </article>
+      <article class="usp__card usp__card--featured reveal reveal-delay-2">
+        <div class="usp__card-icon" aria-hidden="true">✨</div>
+        <h3 data-lang="id">Tekstur yang Familiar</h3>
+        <h3 data-lang="en" style="display:none">Familiar Texture</h3>
+        <p data-lang="id">Bentuk dan kerenyahan mirip kerupuk udang yang Anda sukai — tapi dibuat dari rumput laut. Inovasi tanpa mengorbankan nostalgia.</p>
+        <p data-lang="en" style="display:none">Same shape and crispiness as the shrimp crackers you love — but made from seaweed. Innovation without sacrificing nostalgia.</p>
+      </article>
+      <article class="usp__card reveal reveal-delay-3">
+        <div class="usp__card-icon" aria-hidden="true">💚</div>
+        <h3 data-lang="id">Lebih Sehat & Bergizi</h3>
+        <h3 data-lang="en" style="display:none">Healthier & More Nutritious</h3>
+        <p data-lang="id">Kaya yodium alami, serat, antioksidan, dan mineral laut. Camilan yang tidak perlu Anda sesali.</p>
+        <p data-lang="en" style="display:none">Rich in natural iodine, fiber, antioxidants, and sea minerals. A snack you never have to feel guilty about.</p>
+      </article>
+      <article class="usp__card reveal reveal-delay-1">
+        <div class="usp__card-icon" aria-hidden="true">🏅</div>
+        <h3 data-lang="id">Halal & Tersertifikasi</h3>
+        <h3 data-lang="en" style="display:none">Halal & Certified</h3>
+        <p data-lang="id">Produk telah memenuhi standar halal dan keamanan pangan nasional. Aman dan terpercaya untuk seluruh keluarga.</p>
+        <p data-lang="en" style="display:none">Products meet national halal and food safety standards. Safe and trusted for the whole family.</p>
+      </article>
+      <article class="usp__card reveal reveal-delay-2">
+        <div class="usp__card-icon" aria-hidden="true">🌍</div>
+        <h3 data-lang="id">Potensi Global</h3>
+        <h3 data-lang="en" style="display:none">Global Potential</h3>
+        <p data-lang="id">Produk lokal dengan kualitas internasional yang siap merambah pasar Asia dan dunia. Bangga buatan Indonesia.</p>
+        <p data-lang="en" style="display:none">A local product with international quality, ready to enter Asian and global markets. Proudly made in Indonesia.</p>
+      </article>
+      <article class="usp__card reveal reveal-delay-3">
+        <div class="usp__card-icon" aria-hidden="true">♻️</div>
+        <h3 data-lang="id">Ramah Lingkungan</h3>
+        <h3 data-lang="en" style="display:none">Eco-Friendly</h3>
+        <p data-lang="id">Rumput laut adalah tanaman laut yang tumbuh tanpa pupuk kimia dan membantu menjaga keseimbangan ekosistem laut.</p>
+        <p data-lang="en" style="display:none">Seaweed grows without chemical fertilizers and helps maintain marine ecosystem balance — a truly sustainable choice.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BENEFITS ═════════════════════════════════════════════════ -->
+<section class="section" id="manfaat" aria-label="Health benefits">
+  <div class="container">
+    <div class="benefits__inner">
+      <div class="benefits__content">
+        <span class="tag" data-lang="id">Kesehatan & Gaya Hidup</span>
+        <span class="tag" data-lang="en" style="display:none">Health & Lifestyle</span>
+        <h2 class="section-title reveal" data-lang="id">Camilan yang Bekerja <em>untuk</em> Tubuh Anda</h2>
+        <h2 class="section-title reveal" data-lang="en" style="display:none">A Snack That Works <em>for</em> Your Body</h2>
+        <p class="section-sub reveal" data-lang="id">Setiap gigitan Candra Seaweed membawa manfaat nyata dari kekayaan gizi laut yang telah terbukti selama ribuan tahun.</p>
+        <p class="section-sub reveal" data-lang="en" style="display:none">Every bite of Candra Seaweed delivers real benefits from the ocean's nutritional wealth, proven over thousands of years.</p>
+
+        <div class="benefits__list">
+          <div class="benefit-item reveal">
+            <span class="benefit-item__num">01</span>
+            <div class="benefit-item__content">
+              <h4 data-lang="id">Kaya Yodium Alami</h4>
+              <h4 data-lang="en" style="display:none">Rich in Natural Iodine</h4>
+              <p data-lang="id">Mendukung fungsi tiroid dan metabolisme tubuh yang optimal dengan sumber yodium alami terbaik dari laut.</p>
+              <p data-lang="en" style="display:none">Supports optimal thyroid function and body metabolism with nature's best source of natural iodine from the sea.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal reveal-delay-1">
+            <span class="benefit-item__num">02</span>
+            <div class="benefit-item__content">
+              <h4 data-lang="id">Tinggi Serat & Rendah Kalori</h4>
+              <h4 data-lang="en" style="display:none">High Fiber & Low Calorie</h4>
+              <p data-lang="id">Serat alami rumput laut membantu pencernaan dan membuat kenyang lebih lama, tanpa beban kalori berlebih.</p>
+              <p data-lang="en" style="display:none">Natural seaweed fiber supports digestion and keeps you fuller longer, without excessive calorie load.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal reveal-delay-2">
+            <span class="benefit-item__num">03</span>
+            <div class="benefit-item__content">
+              <h4 data-lang="id">Antioksidan dari Laut</h4>
+              <h4 data-lang="en" style="display:none">Antioxidants from the Sea</h4>
+              <p data-lang="id">Fukoidan dan alginat dalam rumput laut memiliki sifat antioksidan kuat yang membantu melindungi sel-sel tubuh.</p>
+              <p data-lang="en" style="display:none">Fucoidan and alginate in seaweed have powerful antioxidant properties that help protect body cells from damage.</p>
+            </div>
+          </div>
+          <div class="benefit-item reveal reveal-delay-3">
+            <span class="benefit-item__num">04</span>
+            <div class="benefit-item__content">
+              <h4 data-lang="id">Bebas Kolesterol Jahat</h4>
+              <h4 data-lang="en" style="display:none">Free from Bad Cholesterol</h4>
+              <p data-lang="id">Alternatif cerdas untuk camilan tradisional yang tinggi kolesterol. Nikmati kelezatan tanpa rasa bersalah.</p>
+              <p data-lang="en" style="display:none">A smart alternative to traditional snacks high in cholesterol. Enjoy the taste without the guilt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits__visual reveal" aria-hidden="true">
+        <div class="benefits__visual-main">
+          <div class="benefits__visual-center">
+            <span role="img" aria-label="Seaweed">🌿</span>
+            <p>Super Food</p>
+          </div>
+        </div>
+        <div class="benefits__pill benefits__pill--1">🧬 Mineral Laut</div>
+        <div class="benefits__pill benefits__pill--2">💊 Vitamin K & B12</div>
+        <div class="benefits__pill benefits__pill--3">🌱 Plant-Based</div>
+        <div class="benefits__pill benefits__pill--4">🫀 Heart Friendly</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUCT SHOWCASE ═════════════════════════════════════════ -->
+<section class="section showcase" id="produk" aria-label="Product showcase">
+  <div class="container">
+    <div class="showcase__header reveal">
+      <span class="tag" data-lang="id">Pilihan Produk</span>
+      <span class="tag" data-lang="en" style="display:none">Product Selection</span>
+      <h2 class="section-title-product" data-lang="id">Temukan Varian Favorit Anda</h2>
+      <h2 class="section-title-product" data-lang="en" style="display:none">Find Your Favorite Variant</h2>
+      <p class="section-sub-product" data-lang="id">Tiga pilihan rasa yang disesuaikan untuk berbagai selera — dari yang autentik hingga yang bold.</p>
+      <p class="section-sub-product" data-lang="en" style="display:none">Three flavor options tailored for diverse palates — from authentic to bold.</p>
+    </div>
+    <div class="showcase__grid">
+      <article class="product-card product-card--a reveal reveal-delay-1">
+        <div class="product-card__visual">
+          <span role="img" aria-label="Original seaweed crackers - Kerupuk rumput laut original">🌿</span>
+          <!-- Suggested image: Close-up product photo on light background, alt="Kerupuk rumput laut original Candra Seaweed" -->
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Original</h3>
+          <p class="product-card__desc" data-lang="id">Cita rasa autentik rumput laut yang murni — gurih, segar, dan khas. Pilihan sempurna untuk pecinta rasa alami.</p>
+          <p class="product-card__desc" data-lang="en" style="display:none">Pure authentic seaweed flavor — savory, fresh, and distinctive. The perfect choice for natural taste lovers.</p>
+          <div class="product-card__meta">
+            <span class="product-card__badge" data-lang="id">Best Seller</span>
+            <span class="product-card__badge" data-lang="en" style="display:none">Best Seller</span>
+            <span class="product-card__price">Rp 25.000</span>
+          </div>
+        </div>
+      </article>
+      <article class="product-card product-card--b reveal reveal-delay-2">
+        <div class="product-card__visual">
+          <span role="img" aria-label="Spicy seaweed crackers - Kerupuk rumput laut pedas">🌶️</span>
+          <!-- Suggested image: Spicy flavor product photo, alt="Kerupuk rumput laut pedas Candra Seaweed" -->
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name" data-lang="id">Pedas Meriah</h3>
+          <h3 class="product-card__name" data-lang="en" style="display:none">Spicy Delight</h3>
+          <p class="product-card__desc" data-lang="id">Perpaduan sempurna antara kesegaran rumput laut dan pedas cabai lokal yang bikin nagih. Untuk yang suka tantangan rasa.</p>
+          <p class="product-card__desc" data-lang="en" style="display:none">A perfect blend of seaweed freshness and local chili heat that keeps you coming back. For those who love a flavor challenge.</p>
+          <div class="product-card__meta">
+            <span class="product-card__badge" data-lang="id">Favorit Baru</span>
+            <span class="product-card__badge" data-lang="en" style="display:none">New Favorite</span>
+            <span class="product-card__price">Rp 27.000</span>
+          </div>
+        </div>
+      </article>
+      <article class="product-card product-card--c reveal reveal-delay-3">
+        <div class="product-card__visual">
+          <span role="img" aria-label="Cheese seaweed crackers - Kerupuk rumput laut keju">🧀</span>
+          <!-- Suggested image: Cheese flavor product photo, alt="Kerupuk rumput laut keju Candra Seaweed" -->
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name" data-lang="id">Keju Gurih</h3>
+          <h3 class="product-card__name" data-lang="en" style="display:none">Cheesy Savory</h3>
+          <p class="product-card__desc" data-lang="id">Kelezatan rumput laut yang dipadukan dengan keju creamy — kombinasi yang tak terduga namun begitu memanjakan.</p>
+          <p class="product-card__desc" data-lang="en" style="display:none">The goodness of seaweed paired with creamy cheese — an unexpected combination that's wonderfully indulgent.</p>
+          <div class="product-card__meta">
+            <span class="product-card__badge" data-lang="id">Edisi Spesial</span>
+            <span class="product-card__badge" data-lang="en" style="display:none">Special Edition</span>
+            <span class="product-card__price">Rp 28.000</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn btn--gold">
+        <span data-lang="id">🛒 Pesan Semua Varian</span>
+        <span data-lang="en" style="display:none">🛒 Order All Variants</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═════════════════════════════════════════════ -->
+<section class="section section--alt testimonials" id="ulasan" aria-label="Customer testimonials">
+  <div class="container">
+    <div class="testimonials__header reveal">
+      <span class="tag" data-lang="id">Apa Kata Mereka</span>
+      <span class="tag" data-lang="en" style="display:none">What They Say</span>
+      <h2 class="section-title" data-lang="id">Ribuan Keluarga Sudah <br>Merasakannya</h2>
+      <h2 class="section-title" data-lang="en" style="display:none">Thousands of Families<br>Have Experienced It</h2>
+    </div>
+    <div class="testimonials__grid">
+      <article class="testimonial-card reveal reveal-delay-1">
+        <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <p class="testimonial-card__text" data-lang="id">"Awalnya skeptis, tapi setelah coba langsung suka banget! Teksturnya mirip kerupuk udang tapi rasanya lebih segar dan ga bikin sebah. Anak-anak pun doyan!"</p>
+        <p class="testimonial-card__text" data-lang="en" style="display:none">"I was skeptical at first, but after trying it I fell in love! The texture is similar to shrimp crackers but the taste is fresher and doesn't feel heavy. Even my kids love it!"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar tc-a" role="img" aria-label="Siti Rahayu profile">👩</div>
+          <div>
+            <div class="testimonial-card__name">Siti Rahayu</div>
+            <div class="testimonial-card__role" data-lang="id">Ibu Rumah Tangga, Jakarta</div>
+            <div class="testimonial-card__role" data-lang="en" style="display:none">Homemaker, Jakarta</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal reveal-delay-2">
+        <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <p class="testimonial-card__text" data-lang="id">"Sebagai reseller, saya bangga menjual produk ini. Permintaan tinggi karena konsumen makin sadar kesehatan. Margin bagus dan pengiriman selalu tepat waktu!"</p>
+        <p class="testimonial-card__text" data-lang="en" style="display:none">"As a reseller, I'm proud to sell this product. Demand is high because consumers are increasingly health-conscious. Good margins and delivery is always on time!"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar tc-b" role="img" aria-label="Budi Santoso profile">👨</div>
+          <div>
+            <div class="testimonial-card__name">Budi Santoso</div>
+            <div class="testimonial-card__role" data-lang="id">Reseller, Surabaya</div>
+            <div class="testimonial-card__role" data-lang="en" style="display:none">Reseller, Surabaya</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal reveal-delay-3">
+        <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <div class="testimonial-card__quote" aria-hidden="true">"</div>
+        <p class="testimonial-card__text" data-lang="id">"Cocok banget buat yang lagi diet! Saya bisa ngemil tanpa rasa bersalah. Kerupuk rumput laut ini jadi andalan saya setiap hari. Recommended 100%!"</p>
+        <p class="testimonial-card__text" data-lang="en" style="display:none">"Perfect for those on a diet! I can snack without guilt. These seaweed crackers have become my daily staple. 100% recommended!"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar tc-c" role="img" aria-label="Dewi Kurnia profile">👩</div>
+          <div>
+            <div class="testimonial-card__name">Dewi Kurnia</div>
+            <div class="testimonial-card__role" data-lang="id">Fitness Enthusiast, Bandung</div>
+            <div class="testimonial-card__role" data-lang="en" style="display:none">Fitness Enthusiast, Bandung</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BANNER ════════════════════════════════════════════════ -->
+<section class="cta-banner" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-banner__inner reveal">
+      <span class="tag" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.25);" data-lang="id">Bergabunglah Sekarang</span>
+      <span class="tag" style="color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.25);" data-lang="en" style="display:none">Join Us Now</span>
+      <h2 class="cta-banner__title" data-lang="id">Siap Merasakan Sensasi <br>Kerupuk Rumput Laut?</h2>
+      <h2 class="cta-banner__title" data-lang="en" style="display:none">Ready to Experience<br>Seaweed Cracker Sensation?</h2>
+      <p class="cta-banner__sub" data-lang="id">Pesan sekarang untuk pengiriman ke seluruh Indonesia, atau daftarkan diri Anda sebagai reseller dan mulai bisnis menguntungkan bersama kami.</p>
+      <p class="cta-banner__sub" data-lang="en" style="display:none">Order now for delivery across Indonesia, or register as a reseller and start a profitable business with us.</p>
+      <div class="cta-banner__actions">
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="btn btn--wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.107 1.523 5.837L.057 23.882l6.198-1.448A11.937 11.937 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.032-1.384l-.36-.214-3.733.872.938-3.435-.235-.372A9.79 9.79 0 012.182 12C2.182 6.561 6.561 2.182 12 2.182S21.818 6.561 21.818 12 17.439 21.818 12 21.818z"/></svg>
+          <span data-lang="id">Pesan via WhatsApp</span>
+          <span data-lang="en" style="display:none">Order via WhatsApp</span>
+        </a>
+        <a href="#kontak" class="btn btn--outline-white">
+          <span data-lang="id">Daftar Jadi Reseller</span>
+          <span data-lang="en" style="display:none">Become a Reseller</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ══════════════════════════════════════════════════════ -->
+<section class="section" id="faq" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="faq__header reveal">
+      <span class="tag">FAQ</span>
+      <h2 class="section-title" data-lang="id">Pertanyaan yang Sering Ditanyakan</h2>
+      <h2 class="section-title" data-lang="en" style="display:none">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq__list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-item__q" aria-expanded="false" aria-controls="faq1">
+          <span data-lang="id">Apakah kerupuk ini aman untuk anak-anak?</span>
+          <span data-lang="en" style="display:none">Are these crackers safe for children?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a" id="faq1" role="region">
+          <p data-lang="id">Ya, sangat aman! Kerupuk Candra Seaweed dibuat dari bahan-bahan alami tanpa pengawet buatan, pewarna sintetis, atau MSG berlebihan. Cocok untuk anak-anak usia 2 tahun ke atas. Selalu perhatikan varian rasa — varian pedas tidak direkomendasikan untuk anak-anak kecil.</p>
+          <p data-lang="en" style="display:none">Yes, very safe! Candra Seaweed crackers are made from natural ingredients without artificial preservatives, synthetic coloring, or excessive MSG. Suitable for children aged 2 and above. Always note the flavor variant — spicy variants are not recommended for very young children.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-item__q" aria-expanded="false" aria-controls="faq2">
+          <span data-lang="id">Berapa lama masa kadaluarsa produk?</span>
+          <span data-lang="en" style="display:none">What is the product shelf life?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a" id="faq2" role="region">
+          <p data-lang="id">Produk memiliki masa simpan 6 bulan dari tanggal produksi jika disimpan dalam kondisi kering dan tertutup. Kami menggunakan kemasan khusus yang menjaga kerenyahan dan kesegaran produk lebih lama.</p>
+          <p data-lang="en" style="display:none">The product has a shelf life of 6 months from the production date when stored in dry, sealed conditions. We use special packaging that maintains crispiness and freshness longer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-item__q" aria-expanded="false" aria-controls="faq3">
+          <span data-lang="id">Apakah tersedia program reseller atau dropship?</span>
+          <span data-lang="en" style="display:none">Is there a reseller or dropship program?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a" id="faq3" role="region">
+          <p data-lang="id">Ya! Kami membuka program reseller dengan margin keuntungan menarik dan sistem dropship yang mudah. Hubungi kami via WhatsApp untuk informasi paket reseller, minimum order, dan dukungan materi marketing yang kami sediakan.</p>
+          <p data-lang="en" style="display:none">Yes! We open reseller programs with attractive profit margins and an easy dropship system. Contact us via WhatsApp for information on reseller packages, minimum orders, and the marketing materials we provide.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-item__q" aria-expanded="false" aria-controls="faq4">
+          <span data-lang="id">Apakah produk sudah bersertifikat halal?</span>
+          <span data-lang="en" style="display:none">Is the product halal certified?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a" id="faq4" role="region">
+          <p data-lang="id">Ya, produk Candra Seaweed telah memiliki sertifikasi halal dan memenuhi standar keamanan pangan dari BPOM. Kami berkomitmen untuk menjaga kualitas dan kepercayaan konsumen kami.</p>
+          <p data-lang="en" style="display:none">Yes, Candra Seaweed products are halal certified and meet BPOM (Indonesian Food and Drug Authority) food safety standards. We are committed to maintaining the quality and trust of our consumers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-item__q" aria-expanded="false" aria-controls="faq5">
+          <span data-lang="id">Pengiriman ke seluruh Indonesia?</span>
+          <span data-lang="en" style="display:none">Do you ship across Indonesia?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-item__a" id="faq5" role="region">
+          <p data-lang="id">Tentu! Kami melayani pengiriman ke seluruh 34 provinsi di Indonesia melalui berbagai jasa ekspedisi terpercaya. Estimasi pengiriman 2-7 hari kerja tergantung lokasi tujuan. Untuk wilayah Jawa, pengiriman biasanya 1-3 hari kerja.</p>
+          <p data-lang="en" style="display:none">Absolutely! We serve delivery to all 34 provinces in Indonesia through various trusted courier services. Estimated delivery 2-7 business days depending on destination. For Java area, delivery is usually 1-3 business days.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══════════════════════════════════════════════════ -->
+<section class="section contact" id="kontak" aria-label="Contact and order">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="contact__info">
+        <span class="tag" data-lang="id">Hubungi Kami</span>
+        <span class="tag" data-lang="en" style="display:none">Contact Us</span>
+        <h2 class="section-title reveal" data-lang="id">Mari Mulai <br>Perjalanan Anda</h2>
+        <h2 class="section-title reveal" data-lang="en" style="display:none">Let's Start<br>Your Journey</h2>
+        <p class="section-sub reveal" data-lang="id">Siap memesan, menjadi reseller, atau sekadar bertanya? Tim kami siap membantu Anda 7 hari seminggu.</p>
+        <p class="section-sub reveal" data-lang="en" style="display:none">Ready to order, become a reseller, or just have questions? Our team is ready to help you 7 days a week.</p>
+        <div class="contact__channels">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="contact__channel">
+            <div class="contact__channel-icon" aria-hidden="true">💬</div>
+            <div class="contact__channel-text">
+              <div class="contact__channel-label">WhatsApp</div>
+              <div class="contact__channel-value">+62 812-3456-7890</div>
+            </div>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="https://instagram.com/candraseaweed" target="_blank" rel="noopener" class="contact__channel">
+            <div class="contact__channel-icon" aria-hidden="true">📸</div>
+            <div class="contact__channel-text">
+              <div class="contact__channel-label">Instagram</div>
+              <div class="contact__channel-value">@candraseaweed</div>
+            </div>
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="mailto:hello@candraseaweed.id" class="contact__channel">
+            <div class="contact__channel-icon" aria-hidden="true">✉️</div>
+            <div class="contact__channel-text">
+              <div class="contact__channel-label">Email</div>
+              <div class="contact__channel-value">hello@candraseaweed.id</div>
+            </div>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap reveal">
+        <h3 class="contact__form-title" data-lang="id">Kirim Pesan / Pesan Produk</h3>
+        <h3 class="contact__form-title" data-lang="en" style="display:none">Send Message / Order Product</h3>
+        <form id="orderForm" novalidate aria-label="Order form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" data-lang="id">Nama Lengkap</label>
+              <label for="fname" data-lang="en" style="display:none">Full Name</label>
+              <input type="text" id="fname" name="name" placeholder="Nama Anda" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="fphone">WhatsApp</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+62 8xx xxxx xxxx" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ftype" data-lang="id">Saya Ingin</label>
+            <label for="ftype" data-lang="en" style="display:none">I Want To</label>
+            <select id="ftype" name="type">
+              <option value="" data-lang="id">-- Pilih tujuan --</option>
+              <option value="beli" data-lang="id">Membeli untuk konsumsi pribadi</option>
+              <option value="reseller" data-lang="id">Menjadi reseller</option>
+              <option value="grosir" data-lang="id">Pembelian grosir / partai</option>
+              <option value="tanya" data-lang="id">Bertanya informasi produk</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fmsg" data-lang="id">Pesan</label>
+            <label for="fmsg" data-lang="en" style="display:none">Message</label>
+            <textarea id="fmsg" name="message" placeholder="Tuliskan pesanan atau pertanyaan Anda di sini..." data-lang="id"></textarea>
+            <textarea id="fmsg" name="message" placeholder="Write your order or question here..." data-lang="en" style="display:none"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;padding:15px;">
+            <span data-lang="id">Kirim via WhatsApp 💬</span>
+            <span data-lang="en" style="display:none">Send via WhatsApp 💬</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-logo">
+          <div class="footer__brand-logo-mark" aria-hidden="true">🌿</div>
+          <span class="footer__brand-name">Candra <span>Seaweed</span></span>
+        </div>
+        <p class="footer__brand-desc" data-lang="id">Kerupuk rumput laut premium Indonesia. Sehat, lezat, dan inovatif — dari laut untuk meja makan Anda.</p>
+        <p class="footer__brand-desc" data-lang="en" style="display:none">Indonesia's premium seaweed crackers. Healthy, delicious, and innovative — from the ocean to your table.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/candraseaweed" class="footer__social" target="_blank" rel="noopener" aria-label="Instagram Candra Seaweed">📸</a>
+          <a href="https://tiktok.com/@candraseaweed" class="footer__social" target="_blank" rel="noopener" aria-label="TikTok Candra Seaweed">🎵</a>
+          <a href="https://wa.me/6281234567890" class="footer__social" target="_blank" rel="noopener" aria-label="WhatsApp Candra Seaweed">💬</a>
+          <a href="https://facebook.com/candraseaweed" class="footer__social" target="_blank" rel="noopener" aria-label="Facebook Candra Seaweed">📘</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title" data-lang="id">Produk</h4>
+        <h4 class="footer__col-title" data-lang="en" style="display:none">Products</h4>
+        <ul>
+          <li><a href="#produk" data-lang="id">Kerupuk Original</a><a href="#produk" data-lang="en" style="display:none">Original Crackers</a></li>
+          <li><a href="#produk" data-lang="id">Kerupuk Pedas</a><a href="#produk" data-lang="en" style="display:none">Spicy Crackers</a></li>
+          <li><a href="#produk" data-lang="id">Kerupuk Keju</a><a href="#produk" data-lang="en" style="display:none">Cheese Crackers</a></li>
+          <li><a href="#kontak" data-lang="id">Paket Reseller</a><a href="#kontak" data-lang="en" style="display:none">Reseller Package</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title" data-lang="id">Perusahaan</h4>
+        <h4 class="footer__col-title" data-lang="en" style="display:none">Company</h4>
+        <ul>
+          <li><a href="#tentang" data-lang="id">Tentang Kami</a><a href="#tentang" data-lang="en" style="display:none">About Us</a></li>
+          <li><a href="#manfaat" data-lang="id">Manfaat Produk</a><a href="#manfaat" data-lang="en" style="display:none">Product Benefits</a></li>
+          <li><a href="#ulasan" data-lang="id">Testimoni</a><a href="#ulasan" data-lang="en" style="display:none">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title" data-lang="id">Kontak</h4>
+        <h4 class="footer__col-title" data-lang="en" style="display:none">Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/6281234567890">WhatsApp</a></li>
+          <li><a href="https://instagram.com/candraseaweed">Instagram</a></li>
+          <li><a href="mailto:hello@candraseaweed.id">Email</a></li>
+          <li><a href="#kontak" data-lang="id">Lokasi</a><a href="#kontak" data-lang="en" style="display:none">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-lang="id">© 2024 Candra Seaweed. Semua hak dilindungi. 🇮🇩 Bangga Produk Indonesia</span>
+      <span data-lang="en" style="display:none">© 2024 Candra Seaweed. All rights reserved. 🇮🇩 Proudly Made in Indonesia</span>
+      <div style="display:flex;gap:16px;">
+        <a href="#" data-lang="id">Kebijakan Privasi</a>
+        <a href="#" data-lang="en" style="display:none">Privacy Policy</a>
+        <a href="#" data-lang="id">Syarat & Ketentuan</a>
+        <a href="#" data-lang="en" style="display:none">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/6281234567890" class="wa-float" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+  <div class="wa-float__pulse" aria-hidden="true"></div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.107 1.523 5.837L.057 23.882l6.198-1.448A11.937 11.937 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.032-1.384l-.36-.214-3.733.872.938-3.435-.235-.372A9.79 9.79 0 012.182 12C2.182 6.561 6.561 2.182 12 2.182S21.818 6.561 21.818 12 17.439 21.818 12 21.818z"/>
+  </svg>
+</a>
+
+<!-- ─── JAVASCRIPT ─────────────────────────────────────────────── -->
+<script>
+  // ── Navbar scroll effect ──────────────────────────────────
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ── Mobile menu ───────────────────────────────────────────
+  const burgerBtn = document.getElementById('burgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const mobileClose = document.getElementById('mobileClose');
+  const mobileLinks = mobileNav.querySelectorAll('.mobile-nav__link, .btn');
+
+  const openMenu = () => {
+    mobileNav.classList.add('open');
+    burgerBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeMenu = () => {
+    mobileNav.classList.remove('open');
+    burgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  burgerBtn.addEventListener('click', openMenu);
+  mobileClose.addEventListener('click', closeMenu);
+  mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+  // ── Language toggle ───────────────────────────────────────
+  const langToggle = document.getElementById('langToggle');
+  let isEN = false;
+
+  langToggle.addEventListener('click', () => {
+    isEN = !isEN;
+    document.body.classList.toggle('lang-en', isEN);
+    langToggle.textContent = isEN ? '🌐 ID' : '🌐 EN';
+
+    // Toggle all [data-lang] elements
+    document.querySelectorAll('[data-lang="id"]').forEach(el => {
+      el.style.display = isEN ? 'none' : '';
+    });
+    document.querySelectorAll('[data-lang="en"]').forEach(el => {
+      el.style.display = isEN ? '' : 'none';
+    });
+  });
+
+  // ── FAQ accordion ─────────────────────────────────────────
+  document.querySelectorAll('.faq-item__q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item__a').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-item__q').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        answer.classList.add('open');
+        btn.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── Scroll reveal ─────────────────────────────────────────
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => revealObserver.observe(el));
+
+  // ── WhatsApp order form ───────────────────────────────────
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const type = document.getElementById('ftype').value;
+    const msg = document.getElementById('fmsg').value.trim();
+
+    const typeLabels = {
+      beli: 'Membeli untuk konsumsi pribadi',
+      reseller: 'Menjadi reseller',
+      grosir: 'Pembelian grosir',
+      tanya: 'Bertanya informasi produk'
+    };
+
+    const waMsg = encodeURIComponent(
+      `Halo Candra Seaweed! 🌿\n\nNama: ${name || '-'}\nWhatsApp: ${phone || '-'}\nTujuan: ${typeLabels[type] || '-'}\n\nPesan:\n${msg || '-'}\n\nTerima kasih!`
+    );
+
+    window.open(`https://wa.me/6281234567890?text=${waMsg}`, '_blank');
+  });
+
+  // ── Counter animation ─────────────────────────────────────
+  const counters = document.querySelectorAll('.stats-bar__value');
+  let counted = false;
+
+  const statsObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !counted) {
+      counted = true;
+      counters.forEach(counter => {
+        const text = counter.textContent;
+        const num = parseFloat(text.replace(/[^0-9.]/g, ''));
+        if (!isNaN(num) && num > 0) {
+          let start = 0;
+          const suffix = text.replace(/[0-9.]/g, '');
+          const duration = 1500;
+          const step = num / (duration / 16);
+          const timer = setInterval(() => {
+            start = Math.min(start + step, num);
+            counter.textContent = (Number.isInteger(num) ? Math.round(start) : start.toFixed(1)) + suffix;
+            if (start >= num) clearInterval(timer);
+          }, 16);
+        }
+      });
+    }
+  }, { threshold: 0.5 });
+
+  const statsBar = document.querySelector('.stats-bar');
+  if (statsBar) statsObserver.observe(statsBar);
+</script>
+</body>
+</html>
